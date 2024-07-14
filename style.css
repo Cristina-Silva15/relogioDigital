@@ -1,0 +1,29 @@
+body{
+ height: 96vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-size: cover;  
+}
+
+body::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-image: url('paisagem1.jpg');
+ background-size: cover;
+ opacity: 0.69; /* Valor de opacidade de 0 a 1 */
+ z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+#clock{
+ font-size: 5rem;
+ font-weight: 1000;
+ padding: 30px 40px;
+ border: 5px solid rgb(81, 28, 150);
+ border-radius: 15px;
+ color: rgb(58, 7, 141);
+}
